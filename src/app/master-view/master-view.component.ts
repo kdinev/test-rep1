@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IGX_GRID_DIRECTIVES, IgxButtonDirective, IgxIconComponent, IgxOverlayOutletDirective, IgxRippleDirective, IgxToggleActionDirective, IgxToggleDirective } from '@infragistics/igniteui-angular';
 import { IgxCategoryChartModule, IgxPieChartModule } from 'igniteui-angular-charts';
 import { Subject, takeUntil } from 'rxjs';
-import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { EmployeesType } from '../models/northwind/employees-type';
+import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { FinancialService } from '../services/financial.service';
 import { NorthwindService } from '../services/northwind.service';
 
