@@ -1,0 +1,45 @@
+<div class="row-layout group">
+  <button igxButton="outlined" type="button" igxRipple class="button">
+    <igx-icon>
+      add
+    </igx-icon>
+  </button>
+  <div class="group_1">
+    <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+    <igx-pie-chart [dataSource]="financialBoxOfficeRevenue" labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" class="pie-chart"></igx-pie-chart>
+    <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+  </div>
+</div>
+<div class="row-layout group_2">
+  <button igxButton="flat" type="button" igxRipple class="button">
+    <igx-icon>
+      add
+    </igx-icon>
+    <span>Add Widget</span>
+  </button>
+</div>
+<div class="row-layout group">
+  <button igxButton="outlined" type="button" igxRipple class="button">
+    <igx-icon>
+      add
+    </igx-icon>
+  </button>
+  <igx-grid [data]="northwindEmployees" primaryKey="employeeID" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+    <igx-column field="employeeID" dataType="number" header="employeeID" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="lastName" dataType="string" header="lastName" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="firstName" dataType="string" header="firstName" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="title" dataType="string" header="title" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="titleOfCourtesy" dataType="string" header="titleOfCourtesy" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="birthDate" dataType="date" header="birthDate" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="hireDate" dataType="date" header="hireDate" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.street" dataType="string" header="address street" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.city" dataType="string" header="address city" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.region" dataType="string" header="address region" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.postalCode" dataType="string" header="address postalCode" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.country" dataType="string" header="address country" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.phone" dataType="string" header="address phone" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="managerID" dataType="number" header="managerID" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="notes" dataType="string" header="notes" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="avatarUrl" dataType="string" header="avatarUrl" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>

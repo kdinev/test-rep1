@@ -1,0 +1,64 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 100%;
+}
+.group_2 {
+  border-color: var(--ig-gray-900);
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  margin: 24px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.category-chart {
+  min-width: 400px;
+  min-height: 300px;
+}
+.pie-chart {
+  min-width: 250px;
+  min-height: 250px;
+}
+.grid {
+  --ig-size: var(--ig-size-medium);
+  min-width: 600px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
